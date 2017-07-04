@@ -1,0 +1,9 @@
+{
+    "require": {
+        "twilio/sdk": "^5.4",
+        "phpmailer/phpmailer": "^5.2",
+        "league/oauth2-google": "^1.0",
+        "phpoffice/phpexcel": "^1.8",
+        "tecnick.com/tcpdf": "^6.2"
+    }
+}
