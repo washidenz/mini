@@ -32,18 +32,27 @@
 		{
 			include(URI."lib/sql.php");
 			$this->register_class("sql","sql");
-			
+
 			include(URI."lib/session.php");
 			$this->register_class("session","session");
-			
+
 			include(URI."lib/modulo.php");
 			$this->register_class("mod","modulo");
-			
+
 			include(URI."lib/content.php");
 			$this->register_class("content","content");
-			
+
 			include(URI."lib/extra.php");
 			$this->register_class("fn","extra");
+
+			include(URI."lib/upload.php");
+			$this->register_class("upload","upload");
+
+			include(URI."lib/zip.php");
+			$this->register_class("zip","zip");
+
+			include(URI."lib/XML.php");
+			$this->register_class("xml","XML");
 		}
 	}
 ?>

@@ -17,7 +17,7 @@ class Application
 			if( !$this->url_module )
 			{
 				echo "ERROR: Modulo no definido";
-				//header('location: ' . URL . 'error');
+				//header('location: ' . URL . 'fail');
 			}
 			elseif (file_exists(URI_MOD . $this->url_module . '/index.php'))
 			{
@@ -47,7 +47,7 @@ class Application
 					{
 						if( $this->active_params == false )
 						{
-							header('location: ' . URL . 'error');
+							header('location: ' . URL . 'fail');
 						}
 						else
 						{
@@ -61,7 +61,7 @@ class Application
 				}
 				else
 				{
-					header('location: ' . URL . 'error');
+					header('location: ' . URL . 'fail');
 				}
 			}
 			else
@@ -72,13 +72,13 @@ class Application
 				}
 				else
 				{
-					header('location: ' . URL . 'error');
+					header('location: ' . URL . 'fail');
 				}
 			}
 		}
 		else
 		{
-			header('location: ' . URL . 'error');
+			header('location: ' . URL . 'fail');
 		}
 	}
 	private function splitUrl()
